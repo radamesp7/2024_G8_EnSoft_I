@@ -1,0 +1,87 @@
+@startmindmap
+-[#ADD8E6] Sistema de Controle de Estacionamento
+--[#7FFF00] Objetivos do Sistema
+---[#7FFF00] Melhorar Eficiência Operacional
+---[#7FFF00] Redução de Fraudes
+---[#7FFF00] Melhorar Experiência do Usuário
+--[#00FF7F] Stakeholders
+---[#00FF7F] Administradores do Estacionamento
+----[#00FF7F] Relatórios de Ocupação e Faturamento
+----[#00FF7F] Monitoramento de Vagas
+---[#00FF7F] Usuários (Motoristas)
+----[#00FF7F] Reservar Vagas
+----[#00FF7F] Pagamento via Celular (QR Code)
+---[#00FF7F] Equipe de Segurança
+----[#00FF7F] Notificações de Segurança
+----[#00FF7F] Monitoramento de Entrada e Saída
+---[#00FF7F] Autoridades Reguladoras
+----[#00FF7F] Conformidade com Normas e Regulamentos
+----[#00FF7F] Vagas para Deficientes e Idosos
+--[#32CD32] Funcionalidades Principais
+---[#32CD32] Controle de Entrada e Saída
+----[#32CD32] Reconhecimento de Placas
+----[#32CD32] QR Code
+---[#32CD32] Monitoramento de Vagas
+----[#32CD32] Sensores de Ocupação
+----[#32CD32] Alertas de Vagas Ocupadas
+---[#32CD32] Processamento de Pagamentos
+----[#32CD32] Métodos Digitais (Pix, QR Code, App)
+----[#32CD32] Pagamento Proporcional ao Tempo
+---[#32CD32] Geração de Relatórios
+----[#32CD32] Relatórios de Ocupação
+----[#32CD32] Relatórios de Faturamento
+---[#32CD32] Segurança e Monitoramento
+----[#32CD32] Câmeras LPR (ANPR)
+----[#32CD32] Alertas de Incidentes
+--[#00CED1] Funcionalidades Adicionais
+---[#00CED1] Integração com Aplicativos de Navegação
+----[#00CED1] Waze e Google Maps
+---[#00CED1] Vagas Preferenciais Inteligentes
+----[#00CED1] Identificação Automática (Deficientes, Idosos, Veículos Elétricos)
+---[#00CED1] Sistema de Reconhecimento de Placas (ANPR)
+----[#00CED1] Entrada e Saída Automática
+---[#00CED1] Integração com Transporte Público
+----[#00CED1] Informações em Tempo Real
+---[#00CED1] Assistente de Vagas com Realidade Aumentada
+----[#00CED1] Navegação Assistida dentro do Estacionamento
+---[#00CED1] Relatórios Previsionais de Ocupação
+----[#00CED1] Previsões Baseadas em Dados Históricos
+++[#4682B4] Requisitos Funcionais
++++[#4682B4] Controle de Entrada e Saída
++++[#4682B4] Monitoramento de Vagas
++++[#4682B4] Processamento de Pagamentos
++++[#4682B4] Segurança e Monitoramento
++++[#4682B4] Geração de Relatórios
+++[#FFD700] Requisitos Não Funcionais
++++[#FFD700] Desempenho
++++[#FFD700] Segurança
++++[#FFD700] Usabilidade
++++[#FFD700] Escalabilidade
++++[#FFD700] Conformidade Regulamentar
++++[#FFD700] Manutenibilidade
+++[#DC143C] Desafios Identificados
++++[#DC143C] Má Leitura das Placas (Principalmente de Motos)
++++[#DC143C] Falta de Vagas Específicas para Tipos de Veículos
++++[#DC143C] Falta de Área Coberta
++++[#DC143C] Vagas Mal Delimitadas
++++[#DC143C] Problemas com Sensores de Chegada (Leitura de Placas)
+++[#FF8C00] Processos de Manutenção
++++[#FF8C00] Falhas Frequentes no Sistema
++++[#FF8C00] Necessidade de Manutenção Diária
++++[#FF8C00] Automação do Processo de Manutenção
+++[#7B68EE] Caso de Uso
++++[#7B68EE] Entrada do Veículo
+++++[#7B68EE] Reconhecimento de Placa
+++++[#7B68EE] Registro de Entrada
+++++[#7B68EE] Emissão de Fatura
++++[#7B68EE] Monitoramento da Vaga
+++++[#7B68EE] Sensores de Ocupação
++++[#7B68EE] Saída do Veículo
+++++[#7B68EE] Registro de Saída
+++++[#7B68EE] Emissão de Fatura Final
++++[#7B68EE] Pagamento
+++++[#7B68EE] Pagamento via QR Code ou Pix
+++[#20B2AA] Considerações Finais
++++[#20B2AA] Eficiência e Agilidade no Processo
++++[#20B2AA] Redução de Fraudes e Melhor Experiência para Usuários
+@endmindmap
