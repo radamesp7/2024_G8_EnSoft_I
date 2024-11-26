@@ -1,0 +1,32 @@
+@startuml
+skinparam componentStyle rectangle
+skinparam linetype ortho
+
+title Diagrama de Instalação - Sistema de Gerenciamento de Atividades
+
+actor "João (Usuário Comum)" as Joao #lightblue
+actor "Mariana (Administradora)" as Mariana #deepskyblue
+
+node "Caderno Físico" as Caderno #aliceblue
+node "Computador João" as ComputadorJoao #lightblue
+node "Computador Mariana" as ComputadorMariana #lightblue
+
+database "Planilha Pessoal de João" as PlanilhaJoao #skyblue
+database "Planilha de Gestão de Usuários" as PlanilhaGestao #deepskyblue
+database "Planilha de Relatórios de Atividades" as PlanilhaRelatorios #dodgerblue
+
+cloud "Armazenamento na Nuvem" as Nuvem #lightsteelblue
+
+Joao --> Caderno : Consultar/Registrar
+Joao --> ComputadorJoao : Atualizar/Consultar
+ComputadorJoao --> PlanilhaJoao : Sincronizar
+
+Mariana --> ComputadorMariana : Gerenciar Sistema
+ComputadorMariana --> PlanilhaGestao : Adicionar/Consultar
+ComputadorMariana --> PlanilhaRelatorios : Gerar Relatórios
+
+PlanilhaJoao --> Nuvem : Salvar/Recuperar
+PlanilhaGestao --> Nuvem : Sincronizar
+PlanilhaRelatorios --> Nuvem : Sincronizar
+
+@enduml
