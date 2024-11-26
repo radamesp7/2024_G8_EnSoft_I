@@ -1,0 +1,45 @@
+@startuml
+
+skinparam componentStyle square
+skinparam nodeStyle roundrect
+skinparam shadowing true
+skinparam backgroundColor #f7f7f7
+skinparam componentBackgroundColor #E0F7FA
+skinparam componentBorderColor #00838F
+skinparam packageBackgroundColor #B2EBF2
+skinparam packageBorderColor #00838F
+skinparam arrowColor #00838F
+skinparam componentFontColor #01579B
+skinparam packageFontColor #01579B
+
+left to right direction
+
+package "Sistema de Gerenciamento de Atividades" {
+    [Interface de Usuário] <<component>> 
+    [Módulo de Tarefas] <<component>> 
+    [Módulo de Relatórios] <<component>> 
+    [Módulo de Gestão de Usuários] <<component>> 
+    [Base de Dados] <<component>> 
+}
+
+package "Administrador" {
+    [Gestão de Usuários] <<component>> 
+    [Consultas de Relatórios] <<component>> 
+}
+
+[Interface de Usuário] --> [Módulo de Tarefas] : "Interage para consultar e gerenciar tarefas"
+[Interface de Usuário] --> [Módulo de Relatórios] : "Consulta relatórios de atividades"
+[Interface de Usuário] --> [Módulo de Gestão de Usuários] : "Administra usuários (para Administrador)"
+
+[Módulo de Tarefas] --> [Base de Dados] : "Armazena e recupera dados de tarefas"
+[Módulo de Relatórios] --> [Base de Dados] : "Recupera dados para geração de relatórios"
+[Módulo de Gestão de Usuários] --> [Base de Dados] : "Armazena e recupera dados dos usuários"
+
+[Base de Dados] --> [Módulo de Tarefas] : "Fornece dados para tarefas"
+[Base de Dados] --> [Módulo de Relatórios] : "Fornece dados para métricas"
+[Base de Dados] --> [Módulo de Gestão de Usuários] : "Armazena dados de usuários"
+
+[Gestão de Usuários] ---> [Módulo de Gestão de Usuários] : "Administra e adiciona usuários"
+[Consultas de Relatórios] --> [Módulo de Relatórios] : "Consulta relatórios de desempenho"
+
+@enduml
